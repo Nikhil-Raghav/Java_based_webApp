@@ -39,6 +39,8 @@ stages {
             stage ('Docker testing') {
                 steps {
                     sh '''
+                    docker kill itkannadigaru-web-test
+                    docker rm itkannadigaru-web-test
                         docker run -it -d --name itkannadigaru-web-test -p 9000:8080 ${IMAGE_NAME}
                     '''
                 }
