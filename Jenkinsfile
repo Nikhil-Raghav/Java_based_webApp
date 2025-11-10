@@ -6,7 +6,7 @@ pipeline{
         maven 'maven'
     }
     environment {
-         IMAGE_NAME = nikhilraghav08/itkannadigaru-web:${GIT_COMMIT}
+         IMAGE_NAME = "nikhilraghav08/itkannadigaru-web:${GIT_COMMIT}"
 }
 stages {
     stage ('git-checkout') {
