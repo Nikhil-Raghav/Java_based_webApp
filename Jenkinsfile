@@ -11,7 +11,7 @@ pipeline{
 stages {
     stage ('git-checkout') {
             steps {
-            git url:'https://github.com/Nikhil-Raghav/Java_based_webApp.git', branch='prod'
+            git url:'https://github.com/Nikhil-Raghav/Java_based_webApp.git', branch:'prod'
             }
     }
             stage ('Compile') {
