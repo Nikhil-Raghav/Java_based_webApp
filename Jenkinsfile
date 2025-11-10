@@ -31,6 +31,7 @@ stages {
             stage ('Docker build') {
                 steps {
                     sh '''
+                        printenv
                         docker build -t ${IMAGE_NAME} .
                     '''
                 }
